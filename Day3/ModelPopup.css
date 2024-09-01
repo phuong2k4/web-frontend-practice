@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jetbrains Mono';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100%);
+}
+
+
+.container-model{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.btn-open-model{
+    border: none;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-open-model:hover{
+    opacity: 0.5;
+    transition: .5s ease;
+}
+.model{
+    width: 100%;
+    height: 100%;
+}
+.popup-model{
+    width: 450px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    transform: translateX(745px) translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(745px) translateY(150px);
+    visibility: visible;
+    transition: .5s ease;
+}
+
+.opacity-body{
+    background-color: rgb(87, 87, 87);
+}
+.popup-model-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E26E70;
+    height: 50px;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.popup-header-greeting,i{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.popup-model-body{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup-model-body-title{
+    font-size: 25px;
+    color: #E26E70;
+    font-weight: bold;
+}
+.popup-model-body-subtitle{
+    color: rgb(83, 83, 83);
+}
+
+button.popup-model-btn{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E26E70;
+    color: white;
+    bottom: 15px;
+    right: 15px;
+}
+
